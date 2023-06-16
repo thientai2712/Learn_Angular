@@ -1,0 +1,38 @@
+<nav class="navbar bg-dark">
+  <div class="container fluid">
+    <a style="color: white; margin-left: 45%;">View Product Details</a>
+    <button routerLink="/" class="btn btn-warning">Back</button>
+  </div>
+</nav>
+<div class="container-fluid">
+  <table class="table mt-4 table-striped table-bodered">
+    <thead>
+      <tr>
+          <th>Product Image</th>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Product Category</th>
+          <th>Product Description</th>
+          <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let items of products">
+        <td>{{ items.producturl }}</td>
+        <td>{{ items.id }}</td>
+        <td>{{ items.productname }}</td>
+        <td>{{ items.productprice }}</td>
+        <td>{{ items.productcategory }}</td>
+        <td>{{ items.productdescription }}</td>
+        <td>
+          <i class="fa fa-edit"></i>
+          &nbsp;
+          <button routerLink="/view-product" routerLinkActive="active" (click)="removeProduct(items.id)">
+            <i class="fa fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,13 @@
+.card{
+   top: 50%;
+   left: 100%;
+   width: 435px;
+   padding: 31px 40px;
+   transform: translate(-50%, -50%);
+}
+.button{
+  margin-top: 5px;
+}
+.form-control{
+  padding: 5px;
+}
