@@ -54,6 +54,27 @@
         </div>    
     </main>
 
+    <section class="py-8">
+        <div class="items-center justify-between">
+            <div class="w-1/3">
+                <h1 class="text-4xl font-semibold leading-9 text-gray-800">Indor Interiors </h1>
+                <p class="text-base leading-6 mt-4 text-gray-600">Pariatur eu duis officia fugiat.</p>
+                <button type="button" class="mt-6 text-base font-semibold leading-none text-gray-800 flex items-center">View CataLogue</button>
+                <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/feature-VI-svg1.svg" alt="" class="ml-2 mt-1">
+            </div>
+            <div class="mt-8">
+                <div class="w-full h-full bg-red-200">
+                    <img src="https://i.ibb.co/ZVPGjGJ/pexels-max-vakhtbovych-6782351-1.png" alt="">
+                    <img src="https://i.ibb.co/cbyDY74/pexels-max-vakhtbovych-6782351-1-1.png" alt="">
+                </div>
+                <div class="grid gap-6 mt-4 grid-cols-2">
+                    <img src="https://i.ibb.co/0Jv3FSy/pexels-max-vakhtbovych-6436799-1-1.png" alt="">
+                    <img src="https://i.ibb.co/4Jrp5TB/pexels-max-vakhtbovych-6782370-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-gray-200 px-4 py-12">
         <div class="flex flex-col items-center justify-center">
                 <h1 class="items-center ml-2 font-semibold text-xl">FURNATURE</h1>
@@ -231,11 +252,82 @@
                 <div class="w-full absolute z-10 right-0 h-full overflow-x-hidden transform translate-x-0 transition ease-in-out duration-700" id="check-outer">
                     <div class="flex items-end justify-end" id="cart">
                         <div class="px-4 py-4 bg-white overflow-y-hidden overflow-x-hidden h-auto" id="scroll">
-                            <div class="flex items-center text-gray-500 cursor-pointer" onclick="chekcoutBacl()">
+                            <div class="flex items-center text-gray-500 cursor-pointer" onclick="checkoutBack()">
                                 <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/feature-VI-svg1.svg" alt="">
                                 <p class="text-sm pl-2 leading-none">Back</p>
                             </div>
-
+                            <div class="tems-stretch py-8 border-t border-gray-50">
+                                <div class="w-full">
+                                    <img src="https://i.ibb.co/c6KyDXN/Rectangle-5-1.png" alt="" class="h-full object-center object-cover">
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-xs leading-3 text-gray-800 pt-4">2323</p>
+                                    <div class="flex items-center justify-between w-full pt-1">
+                                        <p class="text-base font-black leading-none text-gray-800">AB Sneaker</p>
+                                        <select class="py-2 px-1 border border-gray-200 mr-6">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select> 
+                                    </div>
+                                    <p class="text-xs leading-3 text-gray-600 pt-2">Height: 10inches</p>
+                                    <p class="text-xs leading-3 text-gray-600 pt-2">Color: white</p>
+                                    <p class="w-96 text-xs leading-3 text-gray-600 pt-2">Composition 100% calf leather</p>
+                                    <div class="flex items-center justify-between pt-5">
+                                        <div class="flex items-center">
+                                            <p class="text-xs leading-3 underline text-gray-800 cursor-pointer">Add to favorites</p>
+                                            <p class="text-xs leading-3 underline text-red-800 pl-5 cursor-pointer">Remove</p>  
+                                        </div>
+                                        <p class="text-base font-black leading-none text-gray-800">$500</p>                                       
+                                    </div>                                                  
+                                </div>                          
+                            </div>
+                            <div class="tems-stretch py-8 border-t border-gray-50">
+                                <div class="w-full">
+                                    <img src="https://i.ibb.co/c6KyDXN/Rectangle-5-1.png" alt="" class="h-full object-center object-cover">
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-xs leading-3 text-gray-800 pt-4">2323</p>
+                                    <div class="flex items-center justify-between w-full pt-1">
+                                        <p class="text-base font-black leading-none text-gray-800">AB Sneaker</p>
+                                        <select class="py-2 px-1 border border-gray-200 mr-6">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                        </select> 
+                                    </div>
+                                    <p class="text-xs leading-3 text-gray-600 pt-2">Height: 10inches</p>
+                                    <p class="text-xs leading-3 text-gray-600 pt-2">Color: white</p>
+                                    <p class="w-96 text-xs leading-3 text-gray-600 pt-2">Composition 100% calf leather</p>
+                                    <div class="flex items-center justify-between pt-5">
+                                        <div class="flex items-center">
+                                            <p class="text-xs leading-3 underline text-gray-800 cursor-pointer">Add to favorites</p>
+                                            <p class="text-xs leading-3 underline text-red-800 pl-5 cursor-pointer">Remove</p>  
+                                        </div>
+                                        <p class="text-base font-black leading-none text-gray-800">$500</p>                                       
+                                    </div>                                                  
+                                </div>                          
+                            </div> 
+                            <div class="w-full bg-gray-100 h-full">
+                                <div class="text-3xl font-black leading-9 text-gray-800">
+                                    Summary
+                                </div>
+                                <div class="flex items-center justify-between pt-16">
+                                    <p class="text-base font-black leading-none text-gray-800">Subtotal</p>
+                                    <p class="text-base font-black leading-none text-gray-800">$1000</p>
+                                    <div class="flex items-center justify-between pt-5">
+                                        <p class="text-base font-black leading-none text-gray-800">Shipping</p>
+                                        <p class="text-base font-black leading-none text-gray-800">$20</p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="flex items-center pb-6 justify-betweenpt-20">
+                                <p class="text-2xl leading-normal text-right text-gray-800 font-bold">Total</p>
+                                <p class="text-2xl font-bold leading-normal text-right text-gray-800">$1050</p>
+                            </div>
+                            <button type="button" class="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border text-black">Checkout</button>
                         </div>
                     </div>
                 </div>

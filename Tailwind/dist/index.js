@@ -6,3 +6,7 @@ modalLogin.classList.remove('hidden')
 modalHandlerCart = () => {
 
 }
+
+checkoutBack = () =>{
+    
+}
