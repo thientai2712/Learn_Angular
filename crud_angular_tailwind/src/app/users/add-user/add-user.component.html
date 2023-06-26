@@ -1,0 +1,35 @@
+<div class="flex flex-col gap-8">
+    <h1 class="text-4xl font-bold">Add new user</h1>
+    <div class="">
+        <form [formGroup]="addForm" (ngSubmit)="doCreateUser()" action="" class="flex flex-col gap-8">
+          <div class="flex gap-8">
+                <div class="flex flex-col gap-4">
+                  <label for="firstName">First Name</label>
+                  <input formControlName="firstName" class="outline-none border border-slate-300 rounded-md px-4 py-2 focus:border-x-slate-500" id="firstName" type="text" placeholder="Enter First Name">
+                </div>
+                <div  class="flex flex-col gap-4">
+                  <label for="lastName">Last Name</label>
+                  <input formControlName="lastName" class="outline-none border border-slate-300 rounded-md px-4 py-2 focus:border-x-slate-500" id="lastName" type="text" placeholder="Enter Last Name">
+                </div>
+          </div>
+          <div class="flex gap-8">
+            <div class="flex flex-col gap-4">
+              <label for="username">Username</label>
+              <input formControlName="username" class="outline-none border border-slate-300 rounded-md px-4 py-2 focus:border-x-slate-500" id="username" type="text" placeholder="Enter Username">
+            </div>
+            <div  class="flex flex-col gap-4">
+              <label for="password">Password</label>
+              <input formControlName="password" class="outline-none border border-slate-300 rounded-md px-4 py-2 focus:border-x-slate-500" id="password" type="password" placeholder="Enter Password">
+            </div>
+            <div  class="flex flex-col gap-4">
+              <label for="confirmPassword">Confirm Password</label>
+              <input formControlName="confirmPassword" class="outline-none border border-slate-300 rounded-md px-4 py-2 focus:border-x-slate-500" id="confirmPassword" type="password" placeholder="Enter Last Name">
+            </div>
+          </div>
+          <div class="flex gap-8 items-center">
+            <button [disabled]="addForm.invalid" [ngClass]="{disabled: addForm.invalid}" type="submit" class="px-4 py-4 rounded-md bg-blue-500 hover:bg-blue-700 text-white ">Add user</button>
+            <a routerLink="/users" class= "text-red-600 hover:text-red-800 underline underline-offset-2">Cancel</a>
+          </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="flex flex-col gap-8 container mx-auto">
+    <h1 class="text-4xl font-bold">Users</h1>
+    <div class="">
+          <a  routerLink="add-user">
+            <button class="btn-add">
+              Add new user
+            </button>
+          </a>
+    </div>
+    <table style="width: 100%;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td> {{ user.id }}</td>
+                <td> {{ user.firstname }} </td>
+                <td> {{ user.lastname }} </td>
+                <td> {{ user.username }} </td>
+                <td class="flex gap-4 justify-center">
+                  <a [routerLink]="'edit-user/' + user.id">
+                    <button class="btn-edit" type="submit">Edit</button>
+                  </a>
+                  <button (click)="removeUser(user.id)" class="btn-delete" type="submit">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
